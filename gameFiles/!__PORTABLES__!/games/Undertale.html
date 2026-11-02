@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <base href="https://cdn.jsdelivr.net/gh/aukak/fyinx@main/g/undertale/" />
+    <base href="https://esm.sh/gh/aukak/fyinx@main/g/undertale/" />
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
@@ -389,7 +389,7 @@
         resolve(mergedFileUrl)
         return
       }
-      fetch(`https://cdn.jsdelivr.net/gh/aukak/fyinx@main/g/undertale/${fileParts[index]}`)
+      fetch(`https://esm.sh/gh/aukak/fyinx@main/g/undertale/${fileParts[index]}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Failed to load part ' + (index + 1) + ': HTTP ' + response.status)

@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 
 const view = params.get("view");
 
-const JSON_URL = "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@latest/singlefilegames.json";
+const JSON_URL = "https://esm.sh/gh/dskjfoisjfsjio/alexrsworld@latest/singlefilegames.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");

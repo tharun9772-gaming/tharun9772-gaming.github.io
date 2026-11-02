@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
     const view = params.get("view");
 
-    const BASE = "https://cdn.jsdelivr.net/gh/a456pur/seraph@main/games/";
-    const JSON_URL = "https://cdn.jsdelivr.net/gh/DominumNetwork/dominum@main/src/assets/libraries/seraph/games.json";
+    const BASE = "https://esm.sh/gh/a456pur/seraph@main/games/";
+    const JSON_URL = "https://esm.sh/gh/DominumNetwork/dominum@main/src/assets/libraries/seraph/games.json";
 
     const viewerFrame = document.getElementById("viewerFrame");
     const viewerTitle = document.getElementById("viewerTitle");

@@ -39,13 +39,13 @@ async function loadBlox() {
 async function loadGN() {
   if (DATA.gn.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/freebuisness/assets/zones.json");
+    const r = await fetch("https://esm.sh/gh/freebuisness/assets/zones.json");
     const d = await r.json();
     DATA.gn = safeArray(d)
       .filter(g => g.id !== -1 && g.name && !g.name.startsWith("[!]"))
       .map(g => ({
         name: g.name,
-        img: "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/" + (g.cover || "").replace("{COVER_URL}", ""),
+        img: "https://esm.sh/gh/freebuisness/covers@main/" + (g.cover || "").replace("{COVER_URL}", ""),
         url: "/app-viewer/gn-math/?gn-id=" + g.id
       }));
   } catch (e) {}
@@ -54,11 +54,11 @@ async function loadGN() {
 async function loadElite() {
   if (DATA.elite.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/elite-gamez/elite-gamez.github.io@main/games.json");
+    const r = await fetch("https://esm.sh/gh/elite-gamez/elite-gamez.github.io@main/games.json");
     const d = await r.json();
     DATA.elite = safeArray(d).map(g => ({
       name: g.title || "Unknown",
-      img: "https://cdn.jsdelivr.net/gh/elite-gamez/elite-gamez.github.io@main/" + g.image,
+      img: "https://esm.sh/gh/elite-gamez/elite-gamez.github.io@main/" + g.image,
       url: "/app-viewer/elite-gamez?url=" + encodeURIComponent(g.url)
     }));
   } catch (e) {}
@@ -67,13 +67,13 @@ async function loadElite() {
 async function loadSea() {
   if (DATA.sea.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/sea-bean-unblocked/sde@main/zzz.json");
+    const r = await fetch("https://esm.sh/gh/sea-bean-unblocked/sde@main/zzz.json");
     const d = await r.json();
     DATA.sea = safeArray(d).map(g => {
       const cover = (g.cover || "").replace("{COVER_URL}/", "");
       return {
         name: g.name || "Unknown",
-        img: cover.startsWith("http") ? cover : "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/Singlemile@main/Icon/" + cover,
+        img: cover.startsWith("http") ? cover : "https://esm.sh/gh/sea-bean-unblocked/Singlemile@main/Icon/" + cover,
         url: "/app-viewer/sea-bean?view=" + encodeURIComponent(g.id)
       };
     });
@@ -86,13 +86,13 @@ async function loadUGS() {
   let games = [];
   for (const repo of repos) {
     try {
-      const r = await fetch(`https://cdn.jsdelivr.net/gh/tharun9772/game-assets/api_generated/github/${repo}/file.json`);
+      const r = await fetch(`https://esm.sh/gh/tharun9772/game-assets/api_generated/github/${repo}/file.json`);
       const d = await r.json();
       safeArray(d).forEach(f => {
         if (f.type === "file" && f.name?.startsWith("cl") && f.name?.endsWith(".html")) {
           games.push({
             name: f.name.replace(/^cl/, "").replace(".html", ""),
-            img: "https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/5968517.png",
+            img: "https://esm.sh/gh/tharun9772/game-assets@main/5968517.png",
             url: "/app-viewer/ugs-files?view=" + encodeURIComponent(f.name)
           });
         }
@@ -105,9 +105,9 @@ async function loadUGS() {
 async function loadSeraph() {
   if (DATA.seraph.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/DominumNetwork/dominum@main/src/assets/libraries/seraph/games.json");
+    const r = await fetch("https://esm.sh/gh/DominumNetwork/dominum@main/src/assets/libraries/seraph/games.json");
     const d = await r.json();
-    const BASE = "https://cdn.jsdelivr.net/gh/a456pur/seraph@main/games/";
+    const BASE = "https://esm.sh/gh/a456pur/seraph@main/games/";
     DATA.seraph = safeArray(d).map(g => ({
       name: g.name || "Unknown",
       img: g.img || "",
@@ -119,11 +119,11 @@ async function loadSeraph() {
 async function loadCKV() {
   if (DATA.ckv.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/carbonicality/ChickenKingsVault@main/games.json");
+    const r = await fetch("https://esm.sh/gh/carbonicality/ChickenKingsVault@main/games.json");
     const d = await r.json();
     DATA.ckv = safeArray(d).map(g => ({
       name: g.name || "Unknown",
-      img: g.img ? "https://cdn.jsdelivr.net/gh/carbonicality/ChickenKingsVault@main/images/" + g.img : "",
+      img: g.img ? "https://esm.sh/gh/carbonicality/ChickenKingsVault@main/images/" + g.img : "",
       url: "/app-viewer/chicken-kings-vault/?view=" + g.html
     }));
   } catch (e) {}
@@ -132,11 +132,11 @@ async function loadCKV() {
 async function loadHydra() {
   if (DATA.hydra.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/Hydra-Network/hydra-assets@main/gmes.json");
+    const r = await fetch("https://esm.sh/gh/Hydra-Network/hydra-assets@main/gmes.json");
     const d = await r.json();
     DATA.hydra = safeArray(d).map(g => ({
       name: g.title || "Unknown",
-      img: g.thumb ? "https://cdn.jsdelivr.net/gh/Hydra-Network/hydra-assets@main/" + g.thumb : "",
+      img: g.thumb ? "https://esm.sh/gh/Hydra-Network/hydra-assets@main/" + g.thumb : "",
       url: "/app-viewer/hydra-network/?view=" + g.file_name
     }));
   } catch (e) {}
@@ -145,7 +145,7 @@ async function loadHydra() {
 async function loadCCPorted() {
   if (DATA.ccported.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/ccported-stupid-game-lib.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/ccported-stupid-game-lib.json");
     const d = await r.json();
     DATA.ccported = safeArray(d).map(g => g?.base && g?.Id ? ({
       name: g.name || ("Game " + g.Id),
@@ -158,7 +158,7 @@ async function loadCCPorted() {
 async function loadGoogleClass() {
   if (DATA.googleclass.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/bloxcraft-st/google-class-files@main/assets/games.json");
+    const r = await fetch("https://esm.sh/gh/bloxcraft-st/google-class-files@main/assets/games.json");
     const d = await r.json();
     DATA.googleclass = safeArray(d).map(g => ({
       name: g.name || "Unknown",
@@ -171,14 +171,14 @@ async function loadGoogleClass() {
 async function loadTruffled() {
   if (DATA.truffled.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/aukak/truffled@main/public/js/json/g.json");
+    const r = await fetch("https://esm.sh/gh/aukak/truffled@main/public/js/json/g.json");
     const d = await r.json();
     const games = safeArray(d.games);
     DATA.truffled = games.map(g => {
       const thumb = (g.thumbnail || "").replace(/^\/+/, "").replace(/^png\/games\//, "");
       return normalize({
         name: g.name,
-        img: thumb ? "https://cdn.jsdelivr.net/gh/aukak/truffled@main/public/png/games/" + thumb : "/1f3ae.png",
+        img: thumb ? "https://esm.sh/gh/aukak/truffled@main/public/png/games/" + thumb : "/1f3ae.png",
         url: g.url ? "/sail/embed/#https://truffled.lol/" + g.url.replace(/^\/+/, "") : null
       });
     }).filter(Boolean);
@@ -188,7 +188,7 @@ async function loadTruffled() {
 async function loadNowGG() {
   if (DATA.nowgg.length) return;
   try {
-    const r = await fetch("https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/nowgg.fun/games.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/nowgg.fun/games.json");
     const d = await r.json();
     
    

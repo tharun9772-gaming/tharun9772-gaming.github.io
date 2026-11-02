@@ -7,7 +7,7 @@
 
     if (gameName) {
       const encodedName = encodeURIComponent(gameName);
-      const apiUrl = `https://cdn.jsdelivr.net/gh/tharun9772/LupineVault@main/games/files/${encodedName}/index.html`;
+      const apiUrl = `https://esm.sh/gh/tharun9772/LupineVault@main/games/files/${encodedName}/index.html`;
       let processedHtml = "";
 
       viewerTitle.textContent = gameName;
@@ -18,7 +18,7 @@
           if (!r.ok) throw new Error(r.status);
           let htmlText = await r.text();
           
-          const baseTag = `<base href="https://cdn.jsdelivr.net/gh/tharun9772/LupineVault@main/games/files/${encodedName}/">`;
+          const baseTag = `<base href="https://esm.sh/gh/tharun9772/LupineVault@main/games/files/${encodedName}/">`;
           
           if (htmlText.includes("<head>")) {
             htmlText = htmlText.replace("<head>", `<head>\n  ${baseTag}`);

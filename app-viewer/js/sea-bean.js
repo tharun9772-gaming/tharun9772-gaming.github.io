@@ -8,7 +8,7 @@ const closeViewer = document.getElementById("closeViewer");
 const openNewTab = document.getElementById("openNewTab");
 
 const jsonUrl =
-  "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/sde@main/zzz.json";
+  "https://esm.sh/gh/sea-bean-unblocked/sde@main/zzz.json";
 
 function show404() {
 
@@ -73,7 +73,7 @@ async function loadGame() {
 
       htmlUrl = htmlUrl.replace(
         "{HTML_URL}",
-        "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/Singlemile@main/games/"
+        "https://esm.sh/gh/sea-bean-unblocked/Singlemile@main/games/"
       );
     }
 

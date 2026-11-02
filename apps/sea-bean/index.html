@@ -414,23 +414,23 @@
             sourceName: "Custom",
             author: "Local",
             resolvedCover: "/gameFiles/balatro/baltro.jpg",
-            resolvedUrl: "https://cdn.jsdelivr.net/gh/Sea-Math/game-files@main/balatro.svg"
+            resolvedUrl: "https://esm.sh/gh/Sea-Math/game-files@main/balatro.svg"
         };
 
         const sources = [
             {
                 name: "GN Math Zone",
                 type: "json",
-                json: "https://cdn.jsdelivr.net/gh/freebuisness/assets@main/zones.json",
-                cover: "https://cdn.jsdelivr.net/gh/freebuisness/covers@main",
-                html: "https://cdn.jsdelivr.net/gh/freebuisness/html@main"
+                json: "https://esm.sh/gh/freebuisness/assets@main/zones.json",
+                cover: "https://esm.sh/gh/freebuisness/covers@main",
+                html: "https://esm.sh/gh/freebuisness/html@main"
             },
             {
                 name: "Sea Bean",
                 type: "json",
-                json: "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/sde@main/zzz.json",
-                cover: "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/Singlemile@main/Icon/",
-                html: "https://cdn.jsdelivr.net/gh/sea-bean-unblocked/Singlemile@main/games/"
+                json: "https://esm.sh/gh/sea-bean-unblocked/sde@main/zzz.json",
+                cover: "https://esm.sh/gh/sea-bean-unblocked/Singlemile@main/Icon/",
+                html: "https://esm.sh/gh/sea-bean-unblocked/Singlemile@main/games/"
             },
             {
                 name: "Master Archive",
@@ -518,7 +518,7 @@
                                                 author: repo,
                                                 sourceName: source.name,
                                                 resolvedCover: source.icon,
-                                                resolvedUrl: `https://cdn.jsdelivr.net/gh/${repo}@main/${file.name}${file.type === 'dir' ? '/index.html' : ''}`
+                                                resolvedUrl: `https://esm.sh/gh/${repo}@main/${file.name}${file.type === 'dir' ? '/index.html' : ''}`
                                             });
                                         }
                                     });
@@ -611,7 +611,7 @@
             document.getElementById('zoneAuthor').textContent = "AUTHOR: " + (file.author || "UNKNOWN");
             zoneViewer.style.display = "flex";
 
-            if (url.startsWith("/") || (url.startsWith("http") && !url.includes("cdn.jsdelivr.net") && !url.includes("api.github.com"))) {
+            if (url.startsWith("/") || (url.startsWith("http") && !url.includes("esm.sh") && !url.includes("api.github.com"))) {
                 zoneFrame.src = url; 
                 document.getElementById('zoneName').textContent = file.name; 
                 return;

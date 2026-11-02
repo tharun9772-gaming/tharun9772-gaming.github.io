@@ -7,7 +7,7 @@ const viewerTitle = document.getElementById("viewerTitle");
 const closeViewer = document.getElementById("closeViewer");
 const openNewTab = document.getElementById("openNewTab");
 
-const ELITE_GAMEZ_BASE = "https://cdn.jsdelivr.net/gh/1234chromebook1234-creator/ww@main/";
+const ELITE_GAMEZ_BASE = "https://esm.sh/gh/1234chromebook1234-creator/ww@main/";
 
 function show404() {
   viewerFrame.srcdoc = `
@@ -35,7 +35,7 @@ if (!gameUrl) {
 
   viewerTitle.textContent = "Loading...";
 
-  fetch("https://cdn.jsdelivr.net/gh/1234chromebook1234-creator/ww@main/games.json")
+  fetch("https://esm.sh/gh/1234chromebook1234-creator/ww@main/games.json")
     .then(res => res.json())
     .then(data => {
       const entry = data.find(e => e.url === gameUrl);

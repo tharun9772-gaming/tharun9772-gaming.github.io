@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
 const view = params.get("view");
 
-const BASE = "https://cdn.jsdelivr.net/gh/carbonicality/ChickenKingsVault@main/gamefiles/";
-const JSON_URL = "https://cdn.jsdelivr.net/gh/carbonicality/ChickenKingsVault@main/games.json";
+const BASE = "https://esm.sh/gh/carbonicality/ChickenKingsVault@main/gamefiles/";
+const JSON_URL = "https://esm.sh/gh/carbonicality/ChickenKingsVault@main/games.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");

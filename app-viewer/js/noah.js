@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const view = params.get("view");
-const BASE = "https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/Noahs-Calculus-Tutor/";
-const JSON_URL = "https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/libraries/noahh/gms_replaced.json";
+const BASE = "https://esm.sh/gh/NoahsAmazingTutoringHelp/Noahs-Calculus-Tutor/";
+const JSON_URL = "https://esm.sh/gh/tharun9772/game-assets@main/libraries/noahh/gms_replaced.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");

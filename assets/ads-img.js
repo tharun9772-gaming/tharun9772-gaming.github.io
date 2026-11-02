@@ -73,7 +73,7 @@
       'side-ad-left',
       'side-ad-left',
       'https://beta.publishers.adsterra.com/referral/C9UemEpKss',
-      'https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/adsettera_ads_a_banner.gif',
+      'https://esm.sh/gh/tharun9772/game-assets@main/adsettera_ads_a_banner.gif',
       'noopener nofollow'
     );
 
@@ -81,7 +81,7 @@
       'side-ad-right',
       'side-ad-right',
       'https://ads.bloxcraft.win',
-      'https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/universal_bloxcraft_a_banner.png',
+      'https://esm.sh/gh/tharun9772/game-assets@main/universal_bloxcraft_a_banner.png',
       'noopener'
     );
 

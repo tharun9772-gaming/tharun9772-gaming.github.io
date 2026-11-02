@@ -55,7 +55,7 @@ window.addEventListener("storage", e => {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+<script src="https://esm.sh/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
 <style>
 body{
@@ -220,7 +220,7 @@ body{
 <script>
 const BASES=[
   "https://raw.githubusercontent.com/Darkdragonzxs/zd-pages/main/",
-  "https://cdn.jsdelivr.net/gh/Darkdragonzxs/zd-pages@latest/",
+  "https://esm.sh/gh/Darkdragonzxs/zd-pages@latest/",
   "https://raw.githack.com/Darkdragonzxs/zd-pages/main/"
 ];
 
@@ -296,7 +296,7 @@ async function launchBrowser(target){
     target = "https://html.duckduckgo.com/?q=" + encodeURIComponent(target);
   }
 
-  let html = await fetch("https://cdn.jsdelivr.net/gh/darkdragonzxs/sandstone@latest/index.html")
+  let html = await fetch("https://esm.sh/gh/darkdragonzxs/sandstone@latest/index.html")
     .then(r => r.text());
 
   html = html.replace(/<\/script>/gi, '</scr' + 'ipt>');

@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
 const view = params.get("view");
 
-const BASE = "https://cdn.jsdelivr.net/gh/1234chromebook1234-creator/hh@main/gmes/";
-const JSON_URL = "https://cdn.jsdelivr.net/gh/1234chromebook1234-creator/hh@main/gmes.json";
+const BASE = "https://esm.sh/gh/1234chromebook1234-creator/hh@main/gmes/";
+const JSON_URL = "https://esm.sh/gh/1234chromebook1234-creator/hh@main/gmes.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");

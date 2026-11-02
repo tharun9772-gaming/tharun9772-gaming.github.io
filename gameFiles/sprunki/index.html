@@ -4,7 +4,7 @@
 <head>
   <script src="/assets/js/panic-core.js" defer></script>
   <meta charset="utf-8">
-  <base href="https://cdn.jsdelivr.net/gh/genizy/sprunki/">
+  <base href="https://esm.sh/gh/genizy/sprunki/">
   <title>Bloxcraft UBG - Sprunki</title>
   <style>
     body {
@@ -172,7 +172,7 @@
     </details>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/gh/genizy/sprunki/script.js"></script>
+  <script src="https://esm.sh/gh/genizy/sprunki/script.js"></script>
   <script>
     const appElement = document.getElementById('app');
     const launchScreen = document.getElementById('launch');
@@ -276,7 +276,7 @@
             storage.AssetType.Sound,
             storage.AssetType.Font
           ].filter(i => i),
-          (asset) => new URL('https://cdn.jsdelivr.net/gh/genizy/sprunki/assets/' + asset.assetId + '.' + asset.dataFormat, location).href
+          (asset) => new URL('https://esm.sh/gh/genizy/sprunki/assets/' + asset.assetId + '.' + asset.dataFormat, location).href
         );
         return () => new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
@@ -296,7 +296,7 @@
           }
         };
         xhr.responseType = 'arraybuffer';
-        xhr.open('GET', "https://cdn.jsdelivr.net/gh/genizy/sprunki/assets/project.json");
+        xhr.open('GET', "https://esm.sh/gh/genizy/sprunki/assets/project.json");
         xhr.send();
       });
       })();

@@ -1,5 +1,5 @@
 const API = "https://bloxcraftapires.bloxcraft-ubg.workers.dev";
-const FALLBACK = "https://cdn.jsdelivr.net/gh/tharun9772/One-Link@main/events.json";
+const FALLBACK = "https://esm.sh/gh/tharun9772/One-Link@main/events.json";
 
 const eventsDiv = document.getElementById("events");
 const modal = document.getElementById("modal");

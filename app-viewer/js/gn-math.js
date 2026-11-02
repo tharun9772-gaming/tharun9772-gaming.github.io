@@ -31,7 +31,7 @@
     } else {
       viewerTitle.textContent = "Loading...";
 
-      const jsonUrl = "https://cdn.jsdelivr.net/gh/freebuisness/assets/zones.json";
+      const jsonUrl = "https://esm.sh/gh/freebuisness/assets/zones.json";
 
       fetch(jsonUrl)
         .then(res => res.json())
@@ -39,7 +39,7 @@
           const entry = data.find(e => String(e.id) === id);
           if (!entry || !entry.url) throw new Error("File not found in JSON");
 
-          const htmlUrl = entry.url.replace("{HTML_URL}", "https://cdn.jsdelivr.net/gh/freebuisness/html@master");
+          const htmlUrl = entry.url.replace("{HTML_URL}", "https://esm.sh/gh/freebuisness/html@master");
 
           viewerTitle.textContent = entry.name || id;
 

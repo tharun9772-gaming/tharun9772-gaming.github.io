@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const view = params.get("view");
 
-const JSON_URL = "https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/libraries/youtube/gms.json";
+const JSON_URL = "https://esm.sh/gh/tharun9772/game-assets@main/libraries/youtube/gms.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");

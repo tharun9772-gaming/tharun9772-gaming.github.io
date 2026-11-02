@@ -9,8 +9,8 @@
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SHE360M0YP');</script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6640595376330309" crossorigin="anonymous"></script>
     <title>PeteZah | Games</title>
-    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/PeteZah-Games/PeteZahGames@main/public/storage/images/logo-png-removebg-preview.png" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PeteZah-Games/PeteZahGames@main/public/storage/css/themes2.css">
+    <link rel="icon" type="image/x-icon" href="https://esm.sh/gh/PeteZah-Games/PeteZahGames@main/public/storage/images/logo-png-removebg-preview.png" />
+    <link rel="stylesheet" type="text/css" href="https://esm.sh/gh/PeteZah-Games/PeteZahGames@main/public/storage/css/themes2.css">
     <meta name="description" content="Pete Zah, game on" />
     <meta name="keywords" content="Proxy, Unblocker, Pete Zah Unblocker, Pete Zah Games, Pete Zah" />
     <style>
@@ -132,12 +132,12 @@
     </div>
     <div class="discord-popup" id="discordPopup">
         <div class="discord-popup-close" onclick="closeDiscordPopup()"></div>
-        <img src="https://cdn.jsdelivr.net/gh/PeteZah-Games/PeteZahGames@main/public/storage/images/logo-png-removebg-preview.png" alt="PeteZah Games Logo">
+        <img src="https://esm.sh/gh/PeteZah-Games/PeteZahGames@main/public/storage/images/logo-png-removebg-preview.png" alt="PeteZah Games Logo">
         <h2>PeteZahLite Games</h2>
         <p>Join our Discord community for updates and more!</p>
         <a href="https://discord.petezahgames.com" target="_blank">Join Discord</a>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/PeteZah-Games/PeteZahGames@main/public/storage/js/settings.js"></script>
+    <script src="https://esm.sh/gh/PeteZah-Games/PeteZahGames@main/public/storage/js/settings.js"></script>
     <script>
         let games = [];
         let currentPage = 1;
@@ -145,7 +145,7 @@
 
         async function loadGames() {
             try {
-                const response = await fetch('https://cdn.jsdelivr.net/gh/PeteZah-G/singlefile-json@main/search.json?t=' + Date.now());
+                const response = await fetch('https://esm.sh/gh/PeteZah-G/singlefile-json@main/search.json?t=' + Date.now());
                 games = (await response.json()).games;
                 displayGames(games.slice(0, gamesPerPage));
                 updateLoadMoreButton();

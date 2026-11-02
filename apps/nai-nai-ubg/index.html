@@ -231,7 +231,7 @@ const openNewTabBtn = document.getElementById("openNewTab");
 
 let viewerFrame = document.getElementById("viewerFrame");
 
-const HYDRA_BASE = "https://cdn.jsdelivr.net/gh/Hydra-Network/hydra-assets@main/";
+const HYDRA_BASE = "https://esm.sh/gh/Hydra-Network/hydra-assets@main/";
 const HYDRA_JSON = HYDRA_BASE + "gmes.json";
 
 let filtered = [];
@@ -264,8 +264,8 @@ async function loadUGS(){
         if(f.name.startsWith("cl") && f.name.endsWith(".html")){
           games.push({
             name: f.name.replace(/^cl/,"").replace(".html","").replace(/-/g," "),
-            url: `https://cdn.jsdelivr.net/gh/${repo}@main/${f.name}`,
-            img: "https://cdn.jsdelivr.net/gh/tharun9772/game-assets@main/5968517.png",
+            url: `https://esm.sh/gh/${repo}@main/${f.name}`,
+            img: "https://esm.sh/gh/tharun9772/game-assets@main/5968517.png",
             type: "ugs"
           });
         }

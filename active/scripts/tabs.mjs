@@ -69,7 +69,7 @@ urlForm.onsubmit = async (e) => {
   }
 };
 
-let eruda = `fetch("https://cdn.jsdelivr.net/npm/eruda")
+let eruda = `fetch("https://esm.sh/npm/eruda")
 .then((res) => res.text())
 .then((data) => {
   eval(data);

@@ -299,7 +299,7 @@ function createCardElement(game) {
 
   const img = document.createElement('img');
   img.loading = 'lazy';
-  img.src = `https://cdn.jsdelivr.net/gh/dominum-ubg/game-covers@main/${game.id}.png`;
+  img.src = `https://esm.sh/gh/dominum-ubg/game-covers@main/${game.id}.png`;
 
   const title = document.createElement('h3');
   title.textContent = game.name;
@@ -324,7 +324,7 @@ async function loadGames() {
   status.style.display = 'block';
   status.textContent = "Loading games...";
   try {
-    const res = await fetch('https://cdn.jsdelivr.net/gh/dominum-ubg/assets@main/games.json', {cache: "no-store"});
+    const res = await fetch('https://esm.sh/gh/dominum-ubg/assets@main/games.json', {cache: "no-store"});
     const data = await res.json();
     games = data;
     filteredGames = [...games];
@@ -355,7 +355,7 @@ async function openGame(id, name) {
   overlay.style.display = 'flex';
   viewerTitle.textContent = name || id;
   try {
-    const res = await fetch(`https://cdn.jsdelivr.net/gh/dominum-ubg/games@main/${id}.html`);
+    const res = await fetch(`https://esm.sh/gh/dominum-ubg/games@main/${id}.html`);
     const html = await res.text();
     const doc = frame.contentWindow.document;
     doc.open(); doc.write(html); doc.close();
@@ -376,7 +376,7 @@ closeBtn.onclick = () => {
 newTabBtn.onclick = () => {
   if (!viewerTitle.textContent) return;
   const win = window.open('about:blank', '_blank');
-  fetch(`https://cdn.jsdelivr.net/gh/dominum-ubg/games@main/${viewerTitle.textContent}.html`)
+  fetch(`https://esm.sh/gh/dominum-ubg/games@main/${viewerTitle.textContent}.html`)
     .then(r => r.text())
     .then(html => {
       win.document.open();

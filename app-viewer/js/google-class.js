@@ -4,7 +4,7 @@ const view = params.get("view");
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");
 
-const BASE = "https://cdn.jsdelivr.net/gh/bloxcraft-st/google-class-files@main/";
+const BASE = "https://esm.sh/gh/bloxcraft-st/google-class-files@main/";
 
 let gameData = null;
 let finalUrl = null;
