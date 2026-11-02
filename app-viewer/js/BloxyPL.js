@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://esm.sh/gh/tharun9772/game-assets@main/flash-em.css">
+    <link rel="stylesheet" href="https://esm.sh/gh/tharun9772-gaming/game-assets@main/flash-em.css">
     <title>${gameName}</title>
 </head>
 <body>
@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div id="gameContainer"></div>
             <div id="fullScreenBar">
                 <h3 id="gameFName">${gameName}</h3>
-                <div id="fullscreen"><img src="https://esm.sh/gh/tharun9772/game-assets@main/flash-em.svg"></div>
+                <div id="fullscreen"><img src="https://esm.sh/gh/tharun9772-gaming/game-assets@main/flash-em.svg"></div>
             </div>
         </div>
     </div>
-    <script src="https://esm.sh/gh/tharun9772/game-assets@main/flash-em.js" data-swf-file-src="https://raw.githack.com/bloxys-playables/ruffle-files/main/${encodedName}.swf" data-fname="Bloxcraft UBG | Ruffle Player">
+    <script src="https://esm.sh/gh/tharun9772-gaming/game-assets@main/flash-em.js" data-swf-file-src="https://raw.githack.com/bloxys-playables/ruffle-files/main/${encodedName}.swf" data-fname="Bloxcraft UBG | Ruffle Player">
     </script>
 </body>
 </html>`;

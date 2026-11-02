@@ -86,13 +86,13 @@ async function loadUGS() {
   let games = [];
   for (const repo of repos) {
     try {
-      const r = await fetch(`https://esm.sh/gh/tharun9772/game-assets/api_generated/github/${repo}/file.json`);
+      const r = await fetch(`https://esm.sh/gh/tharun9772-gaming/game-assets/api_generated/github/${repo}/file.json`);
       const d = await r.json();
       safeArray(d).forEach(f => {
         if (f.type === "file" && f.name?.startsWith("cl") && f.name?.endsWith(".html")) {
           games.push({
             name: f.name.replace(/^cl/, "").replace(".html", ""),
-            img: "https://esm.sh/gh/tharun9772/game-assets@main/5968517.png",
+            img: "https://esm.sh/gh/tharun9772-gaming/game-assets@main/5968517.png",
             url: "/app-viewer/ugs-files?view=" + encodeURIComponent(f.name)
           });
         }
@@ -145,7 +145,7 @@ async function loadHydra() {
 async function loadCCPorted() {
   if (DATA.ccported.length) return;
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/ccported-stupid-game-lib.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/ccported-stupid-game-lib.json");
     const d = await r.json();
     DATA.ccported = safeArray(d).map(g => g?.base && g?.Id ? ({
       name: g.name || ("Game " + g.Id),
@@ -188,7 +188,7 @@ async function loadTruffled() {
 async function loadNowGG() {
   if (DATA.nowgg.length) return;
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/nowgg.fun/games.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/nowgg.fun/games.json");
     const d = await r.json();
     
    

@@ -16,8 +16,8 @@ const PAGE_SIZE = 60;
 const FEATURED_LIMIT = 100000;
 const RECOMMENDED_LIMIT = 100000;
 const FALLBACK_IMG = "/1f3ae.png";
-const LIB_BASE = "https://esm.sh/gh/tharun9772/game-assets@main/libraries/";
-const TOPIC_BASE = "https://esm.sh/gh/tharun9772/game-assets@main/topics/";
+const LIB_BASE = "https://esm.sh/gh/tharun9772-gaming/game-assets@main/libraries/";
+const TOPIC_BASE = "https://esm.sh/gh/tharun9772-gaming/game-assets@main/topics/";
 const DATA = {
   blox: [], 
   gn: [], 
@@ -210,7 +210,7 @@ async function loadUGS() {
 
         return {
           name: displayName || f,
-          img: "https://esm.sh/gh/tharun9772/game-assets@main/5968517.png",
+          img: "https://esm.sh/gh/tharun9772-gaming/game-assets@main/5968517.png",
           url: "/app-viewer/ugs-files?view=" + encodeURIComponent(normalizedName)
         };
       })
@@ -272,7 +272,7 @@ async function loadHydra() {
 
 async function loadCCPorted() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/ccported-stupid-game-lib.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/ccported-stupid-game-lib.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA.ccported = dedupeGames(safeArray(d).map(g => {
@@ -317,7 +317,7 @@ async function loadTruffled() {
 
 async function loadNowGG() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/nowgg.fun/games.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/nowgg.fun/games.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA.nowgg = dedupeGames(safeArray(d).map(g => {
@@ -362,7 +362,7 @@ async function loadLupine() {
 
 async function load3kh0() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/3kh0/3kh0-assets.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/3kh0/3kh0-assets.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA["3kh0"] = dedupeGames(safeArray(d).map(name => ({
@@ -375,7 +375,7 @@ async function load3kh0() {
 
 async function load3kh0Lite() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/3kh0/3kh0-lite.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/3kh0/3kh0-lite.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA["3kh0lite"] = dedupeGames(safeArray(d).map(g => ({
@@ -438,7 +438,7 @@ async function loadVelera() {
 
 async function loadFrogies() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/libraries/frogies/gms.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/libraries/frogies/gms.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA.frogies = dedupeGames(safeArray(d).map(g => ({ name: g.title, img: g.IMG || FALLBACK_IMG, url: g.URL })));
@@ -494,7 +494,7 @@ async function loadEpicway() {
 
 async function loadNoahh() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/libraries/noahh/gms_replaced.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/libraries/noahh/gms_replaced.json");
     if (!r.ok) return;
     const rawText = await r.text();
     const fixedJsonText = rawText
@@ -517,7 +517,7 @@ async function loadNoahh() {
 
 async function loadYoutube() {
   try {
-    const r = await fetch("https://esm.sh/gh/tharun9772/game-assets@main/libraries/youtube/gms.json");
+    const r = await fetch("https://esm.sh/gh/tharun9772-gaming/game-assets@main/libraries/youtube/gms.json");
     if (!r.ok) return;
     const d = await r.json();
     DATA.youtube = dedupeGames(safeArray(d).map(g => {

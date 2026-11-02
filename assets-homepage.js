@@ -2,7 +2,7 @@ async function runVersionCheck() {
   const span = document.getElementById("checkversion");
   if (!span) return false;
 
-  const JSON_URL = "https://esm.sh/gh/tharun9772/game-assets@main/version-bloxcraft-ubg.json";
+  const JSON_URL = "https://esm.sh/gh/tharun9772-gaming/game-assets@main/version-bloxcraft-ubg.json";
 
   try {
     const versionLine = span.parentElement;

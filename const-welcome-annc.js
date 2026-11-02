@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     
  
     try {
-        const res = await fetch('https://esm.sh/gh/tharun9772/game-assets@main/welcome.json');
+        const res = await fetch('https://esm.sh/gh/tharun9772-gaming/game-assets@main/welcome.json');
         const json = await res.json();
         welcomeSlides = json.slides || [];
     } catch (e) {
@@ -104,7 +104,7 @@ function closeWelcome() {
 
 async function checkAnnouncements() {
     try {
-        const res = await fetch('https://esm.sh/gh/tharun9772/game-assets@main/annc.json');
+        const res = await fetch('https://esm.sh/gh/tharun9772-gaming/game-assets@main/annc.json');
         const json = await res.json();
         const data = json.announcements?.[0];
 

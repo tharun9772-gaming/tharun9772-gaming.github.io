@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("view");
 
-const JSON_URL = "https://esm.sh/gh/tharun9772/game-assets@main/ccported-stupid-game-lib.json";
+const JSON_URL = "https://esm.sh/gh/tharun9772-gaming/game-assets@main/ccported-stupid-game-lib.json";
 
 const viewerFrame = document.getElementById("viewerFrame");
 const viewerTitle = document.getElementById("viewerTitle");
