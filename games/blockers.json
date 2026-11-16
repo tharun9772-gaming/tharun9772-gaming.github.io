@@ -1,4 +1,9 @@
 [
+    {
+    "name": "Minecraft 26.2",
+    "img": "https://esm.sh/gh/tharun-official-web/games@main/minecraft.jpg",
+    "url": "/sail/embed#https://html.cafe/xff4de9ae"
+  },
   {
     "name": "Google Baseball",
     "img": "https://esm.sh/gh/tharun9772-gaming/game-assets@main/google-baseball.jpg",
@@ -508,11 +513,6 @@
     "name": "Undertale Yellow",
     "img": "/gameFiles/!__PORTABLES__!/IMG/Undertale Yellow.png",
     "url": "/app-viewer/?view=/gameFiles/!__PORTABLES__!/games/Undertale Yellow.html"
-  },
-  {
-    "name": "Minecraft 26.2",
-    "img": "https://esm.sh/gh/tharun-official-web/games@main/minecraft.jpg",
-    "url": "/app-viewer/?view=/gameFiles/!_RANDOMS_!/mcg-selection.html"
   }
   
 ]
